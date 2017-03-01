@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <title>Employee Management App</title>
+  <link href="./lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .oddRow {
+      background-color: #dddddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <employee-management></employee-management>
+  </div>
+  <script src="./lib/angular/angular.min.js"></script>
+  <script src="./lib/angular/angular-route.min.js"></script>
+  <script src="app.js"></script>
+
+  <script src="employeeManagement/employeeManagement.module.js"></script>
+  <script src="employeeManagement/employeeManagement.component.js"></script>
+
+  <script src="employeeList/employeeList.module.js"></script>
+  <script src="employeeList/employeeList.component.js"></script>
+  
+  <script src="employeeAdd/employeeAdd.module.js"></script>
+  <script src="employeeAdd/employeeAdd.component.js"></script>
+
+  <script src="employeeDelete/employeeDelete.module.js"></script>
+  <script src="employeeDelete/employeeDelete.component.js"></script>
+
+  <script src="employeeEdit/employeeEdit.module.js"></script>
+  <script src="employeeEdit/employeeEdit.component.js"></script>
+
+
+
+</body>
+</html>

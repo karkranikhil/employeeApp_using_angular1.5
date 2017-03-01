@@ -1,0 +1,16 @@
+<h3>Enter the Name of the Employee</h3>
+<div class="row">
+  <div class="col-sm-6">
+    <input class="form-control input-lg" type="text" placeholder="employee name" ng-model="employeeBox" />
+  </div>
+</div>
+<div class="row" style="margin-top: 12px;">
+  <div class="col-sm-6">
+    <button class="btn btn-success btn" ng-disabled="!employeeBox || employeeBox==''" ng-click="$ctrl.editor.addEmployee(employeeBox)">
+      Add
+    </button>
+    <a href="#/list" class="btn btn-warning btn">
+      Cancel
+    </a>
+  </div>
+</div>
